@@ -5,193 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOKİ Başvurusu 2025 - Ev Sahibi Olma Fırsatı</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(120deg, #004aad, #007bff);
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 30px auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .hero {
-            width: 100%;
-            height: auto;
-            text-align: center;
-            background-color: #004aad;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .hero img:hover {
-            transform: scale(1.02);
-        }
-
-        .content {
-            padding: 30px;
-            line-height: 1.7;
-        }
-
-        h2 {
-            color: #004aad;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 10px 0;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        .image-section {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .image-section img {
-            width: 90%;
-            max-width: 700px;
-            border-radius: 10px;
-        }
-
-        /* === Geri Sayım === */
-        .countdown {
-            background: #004aad;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 1.4em;
-            border-radius: 0 0 10px 10px;
-        }
-
-        #timer {
-            font-weight: bold;
-            font-size: 1.6em;
-            margin-top: 10px;
-            display: block;
-        }
-
-        footer {
-            background: #004aad;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-        }
+        body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#f8f9fa; color:#333; }
+        header { background: linear-gradient(120deg,#004aad,#007bff); color:white; text-align:center; padding:30px 15px; }
+        header h1 { margin:0; font-size:2.5em; }
+        .container { width:90%; max-width:1000px; margin:30px auto; background:white; box-shadow:0 0 10px rgba(0,0,0,0.1); border-radius:10px; overflow:hidden; }
+        .hero { width:100%; height:auto; text-align:center; background-color:#004aad; }
+        .hero img { width:100%; height:auto; display:block; cursor:pointer; transition: transform 0.3s; }
+        .hero img:hover { transform: scale(1.02); }
+        .content { padding:30px; line-height:1.7; }
+        h2 { color:#004aad; }
+        .btn { display:inline-block; background-color:#007bff; color:white; padding:12px 25px; border-radius:5px; text-decoration:none; margin:10px 0; transition: background-color 0.3s; }
+        .btn:hover { background-color:#0056b3; }
+        .image-section { text-align:center; margin:20px 0; }
+        .image-section img { width:90%; max-width:700px; border-radius:10px; }
+        .countdown { background:#004aad; color:white; text-align:center; padding:20px; font-size:1.4em; border-radius:0 0 10px 10px; }
+        #timer { font-weight:bold; font-size:1.6em; margin-top:10px; display:block; }
+        footer { background:#004aad; color:white; text-align:center; padding:15px; font-size:0.9em; }
+        .visitor-list { background:#e9ecef; padding:15px; margin-top:20px; border-radius:10px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>2025 TOKİ Başvurusu Başladı!</h1>
-        <p>Uygun fiyatlı konut projeleriyle ev sahibi olma fırsatını kaçırmayın.</p>
-    </header>
+<header>
+    <h1>2025 TOKİ Başvurusu Başladı!</h1>
+    <p>Uygun fiyatlı konut projeleriyle ev sahibi olma fırsatını kaçırmayın.</p>
+</header>
 
-    <div class="container">
-        <div class="hero">
-            <!-- Görsele tıklanabilir link -->
-            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank">
-                <img src="Adsız tasarım (20).png" alt="TOKİ Başvurusu Görseli">
-            </a>
-        </div>
-
-        <!-- Geri sayım bölümü -->
-        <div class="countdown">
-            <span>Başvuru bitimine kalan süre:</span>
-            <span id="timer">Yükleniyor...</span>
-        </div>
-
-        <div class="content">
-            <h2>Yeni Dönem TOKİ Başvuruları Başladı</h2>
-            <p>Toplu Konut İdaresi Başkanlığı (TOKİ), dar ve orta gelirli vatandaşlar için 2025 yılı konut başvurularını başlattı. 
-            Türkiye genelinde yüzlerce projede binlerce konut için başvurular <strong>resmi e-Devlet sistemi</strong> üzerinden yapılabilecek.</p>
-
-            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
-
-            <div class="image-section">
-                <img src="https://www.toki.gov.tr/Content/images/haberler/toki-evleri.jpg" alt="TOKİ Projeleri Görseli">
-            </div>
-
-            <h2>Başvuru Şartları ve Tarihleri</h2>
-            <p>Başvuru yapacak adayların Türkiye Cumhuriyeti vatandaşı olması, daha önce TOKİ'den konut almamış olması ve belirlenen gelir kriterlerini sağlaması gerekiyor. 
-            Başvurular <strong>1 Kasım - 30 Kasım 2025</strong> tarihleri arasında yapılabilecek.</p>
-
-            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
-
-            <div class="image-section">
-                <img src="https://toki.gov.tr/Content/images/haberler/toki-proje2.jpg" alt="TOKİ Yeni Konut Projeleri">
-            </div>
-
-            <h2>Projeler Hakkında</h2>
-            <p>Yeni projeler, deprem yönetmeliğine uygun olarak modern şehircilik anlayışıyla inşa ediliyor. 
-            Sosyal alanlar, yeşil parklar ve çocuk oyun alanları ile donatılan bu konutlar, şehir yaşamına yeni bir soluk getiriyor.</p>
-
-            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
-        </div>
+<div class="container">
+    <div class="hero">
+        <a href="https://toki500.danismanlikhizmeti.org/" target="_blank">
+            <img src="Adsız tasarım (20).png" alt="TOKİ Başvurusu Görseli">
+        </a>
     </div>
 
-    <footer>
-        © 2025 TOKİ Başvuru Haber Portalı | Bu site bilgilendirme amaçlıdır.
-    </footer>
+    <div class="countdown">
+        <span>Başvuru bitimine kalan süre:</span>
+        <span id="timer">Yükleniyor...</span>
+    </div>
 
-    <!-- Geri sayım scripti -->
-    <script>
-        // Hedef tarih: 30 Kasım 2025 23:59:59
-        var countDownDate = new Date("Nov 30, 2025 23:59:59").getTime();
+    <div class="content">
+        <h2>Yeni Dönem TOKİ Başvuruları Başladı</h2>
+        <p>Toplu Konut İdaresi Başkanlığı (TOKİ), dar ve orta gelirli vatandaşlar için 2025 yılı konut başvurularını başlattı. Türkiye genelinde yüzlerce projede binlerce konut için başvurular <strong>resmi e-Devlet sistemi</strong> üzerinden yapılabilecek.</p>
 
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
+        <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <div class="image-section">
+            <img src="https://www.toki.gov.tr/Content/images/haberler/toki-evleri.jpg" alt="TOKİ Projeleri Görseli">
+        </div>
 
-            document.getElementById("timer").innerHTML = 
-                days + " Gün " + hours + " Saat " + minutes + " Dakika " + seconds + " Saniye";
+        <h2>Başvuru Şartları ve Tarihleri</h2>
+        <p>Başvuru yapacak adayların Türkiye Cumhuriyeti vatandaşı olması, daha önce TOKİ'den konut almamış olması ve belirlenen gelir kriterlerini sağlaması gerekiyor. Başvurular <strong>1 Kasım - 30 Kasım 2025</strong> tarihleri arasında yapılabilecek.</p>
 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "Başvuru Süresi Sona Erdi";
-            }
-        }, 1000);
-    </script>
+        <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
+
+        <div class="image-section">
+            <img src="https://toki.gov.tr/Content/images/haberler/toki-proje2.jpg" alt="TOKİ Yeni Konut Projeleri">
+        </div>
+
+        <h2>Projeler Hakkında</h2>
+        <p>Yeni projeler, deprem yönetmeliğine uygun olarak modern şehircilik anlayışıyla inşa ediliyor. Sosyal alanlar, yeşil parklar ve çocuk oyun alanları ile donatılan bu konutlar, şehir yaşamına yeni bir soluk getiriyor.</p>
+
+        <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
+
+        <div class="visitor-list">
+            <h3>Giriş Yapan IP’ler:</h3>
+            <ul id="visitorList"></ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 TOKİ Başvuru Haber Portalı | Bu site bilgilendirme amaçlıdır.
+</footer>
+
+<script>
+    // Geri sayım
+    var countDownDate = new Date("Nov 30, 2025 23:59:59").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000*60*60*24));
+        var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+        var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+        var seconds = Math.floor((distance % (1000*60)) / 1000);
+        document.getElementById("timer").innerHTML = days + " Gün " + hours + " Saat " + minutes + " Dakika " + seconds + " Saniye";
+        if(distance < 0){
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "Başvuru Süresi Sona Erdi";
+        }
+    }, 1000);
+
+    // IP kaydı ve listeleme
+    fetch('/log')
+        .then(() => fetch('/visitors'))
+        .then(res => res.json())
+        .then(data => {
+            const ul = document.getElementById('visitorList');
+            data.forEach(ip => {
+                const li = document.createElement('li');
+                li.textContent = ip;
+                ul.appendChild(li);
+            });
+        })
+        .catch(err => console.error('Hata:', err));
+</script>
 
 </body>
 </html>
