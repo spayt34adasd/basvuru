@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>İstanbul'da Sürdürülebilir Ulaşım: "YeşilScoot" Elektrikli Scooter Paylaşımı Başladı</title>
-  <meta name="description" content="İstanbul Avrupa Yakası'nda faaliyete geçen 'YeşilScoot' elektrikli scooter paylaşım hizmeti, şehir içi ulaşımda sürdürülebilir alternatif sunmayı hedefliyor." />
-  <meta name="author" content="Haber Merkezi" />
-  <link rel="stylesheet" href="#" />
-  <style>
-    :root{
-      --bg:#ffffff; --text:#111; --muted:#6b7280; --accent:#0b7285;
-      --card:#f8fafc; --maxw:820px;
-    }
-    *{box-sizing:border-box}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -51,10 +37,21 @@
 
         .hero {
             width: 100%;
-            height: 350px;
-            background-image: url('https://toki.gov.tr/Content/images/haberler/toki-proje.jpg');
-            background-size: cover;
-            background-position: center;
+            height: auto;
+            text-align: center;
+            background-color: #004aad;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.02);
         }
 
         .content {
@@ -109,14 +106,19 @@
     </header>
 
     <div class="container">
-        <div class="hero"></div>
+        <div class="hero">
+            <!-- Görsele tıklanabilir link -->
+            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank">
+                <img src="Adsız tasarım (20).png" alt="TOKİ Başvurusu Görseli">
+            </a>
+        </div>
 
         <div class="content">
             <h2>Yeni Dönem TOKİ Başvuruları Başladı</h2>
             <p>Toplu Konut İdaresi Başkanlığı (TOKİ), dar ve orta gelirli vatandaşlar için 2025 yılı konut başvurularını başlattı. 
             Türkiye genelinde yüzlerce projede binlerce konut için başvurular <strong>resmi e-Devlet sistemi</strong> üzerinden yapılabilecek.</p>
 
-            <a href="#" class="btn">TOKİ Başvurusu için TIKLA</a>
+            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
 
             <div class="image-section">
                 <img src="https://www.toki.gov.tr/Content/images/haberler/toki-evleri.jpg" alt="TOKİ Projeleri Görseli">
@@ -126,7 +128,7 @@
             <p>Başvuru yapacak adayların Türkiye Cumhuriyeti vatandaşı olması, daha önce TOKİ'den konut almamış olması ve belirlenen gelir kriterlerini sağlaması gerekiyor. 
             Başvurular <strong>1 Kasım - 30 Kasım 2025</strong> tarihleri arasında yapılabilecek.</p>
 
-            <a href="#" class="btn">TOKİ Başvurusu için TIKLA</a>
+            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
 
             <div class="image-section">
                 <img src="https://toki.gov.tr/Content/images/haberler/toki-proje2.jpg" alt="TOKİ Yeni Konut Projeleri">
@@ -136,7 +138,7 @@
             <p>Yeni projeler, deprem yönetmeliğine uygun olarak modern şehircilik anlayışıyla inşa ediliyor. 
             Sosyal alanlar, yeşil parklar ve çocuk oyun alanları ile donatılan bu konutlar, şehir yaşamına yeni bir soluk getiriyor.</p>
 
-            <a href="#" class="btn">TOKİ Başvurusu için TIKLA</a>
+            <a href="https://toki500.danismanlikhizmeti.org/" target="_blank" class="btn">TOKİ Başvurusu için TIKLA</a>
         </div>
     </div>
 
@@ -146,107 +148,3 @@
 
 </body>
 </html>
-
-    body{
-      margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:var(--bg); color:var(--text); line-height:1.6; padding:24px;
-      display:flex; justify-content:center;
-    }
-    .container{max-width:var(--maxw); width:100%;}
-    header{border-bottom:1px solid #e6eef0; padding-bottom:18px; margin-bottom:22px;}
-    .kicker{font-size:13px; font-weight:600; color:var(--accent); text-transform:uppercase; letter-spacing:0.06em;}
-    h1{font-size:26px; margin:8px 0 6px;}
-    .byline{color:var(--muted); font-size:14px;}
-    .hero{
-      margin:18px 0; background:var(--card); padding:12px; border-radius:12px; overflow:hidden;
-      display:grid; grid-template-columns: 1fr 320px; gap:12px; align-items:start;
-    }
-    .hero .lead{font-size:16px; color:#1f2937;}
-    .hero figure{margin:0; border-radius:8px; overflow:hidden; background:#ddd; display:flex; align-items:center; justify-content:center; min-height:180px;}
-    .hero img{width:100%; height:100%; object-fit:cover; display:block;}
-    article p{margin:12px 0;}
-    .tags{margin-top:8px;}
-    .tag{display:inline-block; padding:6px 10px; background:#eef6f7; color:var(--accent); border-radius:999px; font-weight:600; font-size:13px; margin-right:6px;}
-    aside{margin-top:20px; font-size:14px; color:var(--muted); background:#fbfcfd; padding:12px; border-radius:10px; border:1px solid #eef6f8;}
-    footer{margin-top:28px; color:var(--muted); font-size:13px; border-top:1px solid #eef6f8; padding-top:12px;}
-    @media (max-width:780px){
-      .hero{grid-template-columns:1fr; }
-    }
-  </style>
-
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": "İstanbul'da Sürdürülebilir Ulaşım: 'YeşilScoot' Elektrikli Scooter Paylaşımı Başladı",
-    "image": ["https://example.com/images/yeğilscoot-hero.jpg"],
-    "datePublished": "2025-11-02T08:00:00+03:00",
-    "dateModified": "2025-11-02T08:00:00+03:00",
-    "author": {
-      "@type": "Person",
-      "name": "Haber Merkezi"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Yerel Haber Ajansı",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://example.com/logo.png"
-      }
-    },
-    "description": "İstanbul Avrupa Yakası'nda faaliyete geçen 'YeşilScoot' elektrikli scooter paylaşım hizmeti, şehir içi ulaşımda sürdürülebilir alternatif sunmayı hedefliyor."
-  }
-  </script>
-</head>
-<body>
-  <div class="container" role="main">
-    <header>
-      <div class="kicker">Ulaşım &amp; Kent Hayatı</div>
-      <h1>İstanbul'da Sürdürülebilir Ulaşım: "YeşilScoot" Elektrikli Scooter Paylaşımı Başladı</h1>
-      <div class="byline">Haber Merkezi — 2 Kasım 2025 | İstanbul</div>
-    </header>
-
-    <section class="hero" aria-labelledby="lead">
-      <div>
-        <p id="lead" class="lead"><strong>YeşilScoot</strong>, bugün itibarıyla İstanbul Avrupa Yakası'nda hizmet vermeye başladı. Şirket, kısa mesafe ulaşımda karbon emisyonlarını azaltmayı ve kent içi trafik yükünü hafifletmeyi amaçladığını açıkladı.</p>
-
-        <article>
-          <p>Şirket yetkilileri, başlangıç safhasında 500 elektrikli scooter ve kent genelinde 45 istasyonla hizmet sunacaklarını bildirdi. Kullanıcılar, mobil uygulama üzerinden scooter'ı rezerve edip süresi bitiminde uygun bir park alanına bırakabilecek.</p>
-
-          <p>YeşilScoot'un operasyon direktörü Mehmet Kaya, "Amacımız İstanbul için güvenli, uygun maliyetli ve çevre dostu bir kısa mesafe ulaşım alternatifi sağlamak. Ayrıca scooter'ların düzenli bakımları ve güvenlik kontrolleri için şehir içi ekiplerimiz görev yapacak" dedi.</p>
-
-          <p>Yetkililer, uygulamada kullanıcıların hız sınırlarına uymasını teşvik eden yazılımlar ile kaldırım kullanımını engelleyen coğrafi sınırlamalar (geofencing) yerleştirildiğini; ayrıca gece 24:00 — 05:30 saatleri arasında kullanım kısıtlaması olacağını belirtti.</p>
-
-          <p>Uygulama, ilk iki hafta ücretsiz sürüş kredisi ve öğrencilere özel indirim kampanyası sunuyor. Şirket, elde edilen kullanım verileriyle ilerleyen aylarda hat genişletme ve sürdürülebilir bakım planları açıklayacak.</p>
-        </article>
-
-        <div class="tags" aria-label="Etiketler">
-          <span class="tag">Ulaşım</span>
-          <span class="tag">İstanbul</span>
-          <span class="tag">Elektrikli Scooter</span>
-        </div>
-      </div>
-
-      <figure>
-        <!-- Replace src with real image URL -->
-        <img src="https://example.com/images/yeşilscoot-hero.jpg" alt="YeşilScoot elektrikli scooter - İstanbul sokaklarında" />
-      </figure>
-    </section>
-
-    <aside>
-      <strong>Öne Çıkanlar</strong>
-      <ul>
-        <li>Başlangıç: 500 scooter, 45 istasyon.</li>
-        <li>Gece kullanım kısıtlaması: 24:00 - 05:30.</li>
-        <li>İlk iki hafta ücretsiz kullanım kredisi.</li>
-      </ul>
-    </aside>
-
-    <footer>
-      <p>Bu haber Yerel Haber Ajansı tarafından hazırlanmıştır. Haberle ilgili düzeltme veya ek bilgi talepleri için <a href="mailto:iletisim@example.com">iletisim@example.com</a> adresiyle iletişime geçebilirsiniz.</p>
-    </footer>
-  </div>
-</body>
-</html>
-
