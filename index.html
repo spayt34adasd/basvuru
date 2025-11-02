@@ -89,6 +89,23 @@
             border-radius: 10px;
         }
 
+        /* === Geri Sayım === */
+        .countdown {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.4em;
+            border-radius: 0 0 10px 10px;
+        }
+
+        #timer {
+            font-weight: bold;
+            font-size: 1.6em;
+            margin-top: 10px;
+            display: block;
+        }
+
         footer {
             background: #004aad;
             color: white;
@@ -111,6 +128,12 @@
             <a href="https://toki500.danismanlikhizmeti.org/" target="_blank">
                 <img src="Adsız tasarım (20).png" alt="TOKİ Başvurusu Görseli">
             </a>
+        </div>
+
+        <!-- Geri sayım bölümü -->
+        <div class="countdown">
+            <span>Başvuru bitimine kalan süre:</span>
+            <span id="timer">Yükleniyor...</span>
         </div>
 
         <div class="content">
@@ -145,6 +168,30 @@
     <footer>
         © 2025 TOKİ Başvuru Haber Portalı | Bu site bilgilendirme amaçlıdır.
     </footer>
+
+    <!-- Geri sayım scripti -->
+    <script>
+        // Hedef tarih: 30 Kasım 2025 23:59:59
+        var countDownDate = new Date("Nov 30, 2025 23:59:59").getTime();
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = 
+                days + " Gün " + hours + " Saat " + minutes + " Dakika " + seconds + " Saniye";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "Başvuru Süresi Sona Erdi";
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
