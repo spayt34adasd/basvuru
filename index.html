@@ -1,1 +1,86 @@
-Merhaba
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bir Akşamüstü Hikâyesi</title>
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --accent: #3b82f6;
+      --muted: #6b7280;
+      --text: #111827;
+      --radius: 12px;
+      --max-width: 720px;
+      --line-height: 1.75;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg), #eef2f7);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 20px;
+      display:flex; align-items:flex-start; justify-content:center;
+      min-height:100vh;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+      max-width:var(--max-width);
+      width:100%;
+      padding:32px;
+      line-height:var(--line-height);
+    }
+    header{margin-bottom:18px}
+    h1{
+      margin:0 0 6px 0; font-size:28px; letter-spacing:-0.3px;
+    }
+    .meta{color:var(--muted); font-size:14px}
+    .lead{
+      margin:18px 0; font-size:18px; color:#0f172a; font-weight:500;
+    }
+    p{margin:14px 0}
+    .dropcap:first-letter{
+      float:left; font-size:48px; line-height:1; padding-right:10px; font-weight:700; color:var(--accent);
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    footer{margin-top:26px; color:var(--muted); font-size:13px}
+    @media (max-width:520px){
+      body{padding:24px 12px}
+      .card{padding:20px}
+      h1{font-size:22px}
+      .lead{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <header>
+      <h1>Bir Akşamüstü Hikâyesi</h1>
+      <div class="meta">Kısa hikâye — okunabilir HTML düzeni</div>
+    </header>
+
+    <p class="lead">Gün batarken sokak lambaları usul usul yanıyor; şehir, günün telaşını yavaşça salar gibi yapıyordu.</p>
+
+    <div class="dropcap">
+      <p>Ali, elinde sıcak bir çay fincanı ile pencereden dışarı bakıyordu. Karşı sokağın köşesinde birkaç ağaç, rüzgârın hafif dokunuşuyla yapraklarını sallıyor; bir kedinin hızlı adımlarla geçen gölgesi kaldırımda titriyordu. Bugün olağan günlerden biriydi ama Ali'nin içindeki huzur, bu sıradan akşamı başka bir hâle getirmişti.</p>
+
+      <p>Yıllardır görmediği bir dostunun adı ansızın zihninde belirdi. Hatıralar, sayfaları rüzgârla çevrilen bir kitaba benzercesine üst üste geldi: birlikte geçirilen kahkahalar, paylaşılan küçük sırlar, ve suskunluğun bazen daha çok şey anlattığı anlar. Ali, o anlarda zamanın nasıl geçtiğini düşünmeden, geçmişin sıcaklığını hissetti.</p>
+
+      <p>Birden kapı çaldı. Ali, çayı masaya koyup kapıyı açtı; karşısında karşı komşusu Elif duruyordu. Elif'in yüzünde hem tanıdık hem yeni bir gülümseme vardı — sanki yılların getirdiği bir hafiflik ve bugün yaşananların heyecanı bir aradaydı. "Çay içmeye gelir misin?" diye sordu Elif. İçten bir davetti bu; davetin içindeki sessiz vaat, eski bir dostluğu yeniden yakma umuduydu.</p>
+
+      <p>İki komşu, küçük mutfağın etrafında toplandılar; konuşma ağır ağır başladı, önce günlük haberlerle, sonra çocukluk anılarıyla, en sonunda da hayallerle. Konuştukça kelimeler değil, paylaşımlar çoğalıyordu. Dışarıda gece derinleşirken, içeriye yavaşça yalnızlık değil, aidiyet doluyordu.</p>
+
+      <p>O akşam, Ali eline bir defter aldı ve unutmak istemediği anları karalamaya başladı. Sayfalar, eski yapraklar gibi sararmadan önce yeni hikâyelerle dolacaktı. Pencereden bakınca şehir ışıkları sanki birer beyin kıvılcımı gibiydi; herkes kendi küçük dünyasında bir şeyleri tamir ediyordu.</p>
+
+      <p>Ve hikâye, yılların biriktirdiklerini hatırlamak, küçük davetlere evet demek ve insanlarla kurduğumuz bağları taze tutmak üzerine sessiz bir davet olarak sona erdi. Ali, o gece pencereden bakıp gülümsedi — çünkü bilmişti ki, en basit anlar bile bir hikâyeyi yeniden yazmaya yeter.</p>
+    </div>
+
+    <footer>İstersen bu hikâyeyi kısaltayım, uzatayım ya da farklı bir türe (dram, fantastik, romantik) dönüştüreyim.</footer>
+  </article>
+</body>
+</html>
